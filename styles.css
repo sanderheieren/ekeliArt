@@ -10,9 +10,10 @@
     font-family: "Roboto", sans-serif;
     width: 100vw;
     height: 100vh;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y:visible;
     border: 1px solid black;
-    background-color: yellow;
+    /* background-color: yellow; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -23,17 +24,16 @@
     height: 100%;
     background: rgb(245, 252, 255);
     margin: 5px;
-    border: 1px solid black;
-    background-color: lightblue;
+    /* border: 1px solid black; */
+    background-color: #eee;
     display: flex;
     flex-direction: column;
   }
 
   .header-wrapper {
-      background-color: green;
       display: flex;
       position: fixed;
-      background-color: orange;
+      /* background-color: orange; */
       top: 0;
       left: 0;
       right: 0;
@@ -57,7 +57,7 @@
 
   .nav-wrapper {
       margin: 5px;
-      background-color: #fff;
+      /* background-color: #fff; */
       width: 100%;
       display: flex;
       justify-content: center;
@@ -77,10 +77,57 @@
 	transition: all 0.3s ease-in;
 }
 
-  .main-wrapper {
-      background-color: red;
+.header-wrapper ul li {
+    text-transform: uppercase;
+}
+
+.main-wrapper {
+    margin-top: 100px;
+    /* background-color: red; */
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    justify-content: flex-start;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
   }
+.main-wrapper .title {
+    font-weight: lighter;
+    position: relative;
+    color: black;
+    line-height: 30px;
+    letter-spacing: 2px;
+    margin: 10px 0;
+    min-width: 325px;
+}
+
+.main-wrapper .title::before {
+    content: "ART | BY SANDER HEIEREN";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-size: 10px;
+    left: 50%;
+    bottom: 75%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+}
+
+.main-wrapper img {
+    width: 100%;
+    height: auto;
+    min-width: 325px;
+    max-width: 600px;
+    padding: 10px;
+}
 
   .footer-wrapper {
       background-color: blue;
+  }
+
+  @media (max-width: 528px) {
+      /* .nav-wrapper {
+          display: none;
+      } */
   }
