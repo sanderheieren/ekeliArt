@@ -3,28 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>EkeliArt</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio Ekeli</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://use.fontawesome.com/34a62d56ed.js"></script>
 </head>
     <body>
         <div class="container">
             <header id="header" class="header-wrapper">
-                <div class="logo-wrapper">
+                <!-- <div class="logo-wrapper">
                     <a href="/index.html">
-                        <img src="logo.png" alt="logo">
+                        <img src="logo.png" alt="logo" >
                     </a>
-                </div>
+                </div> -->
                 <div class="nav-wrapper">
                     <ul>
                         <li>
                             <a href="#">Home</a>
                         </li>
                         <li>
-                            <a href="#">About</a>
+                            <a href="#about">About</a>
                         </li>
                         <li>
-                            <a href="#">Work</a>
+                            <a href="#work">Work</a>
                         </li>
                         <li>
                             <a href="#">Contact</a>
@@ -36,11 +38,60 @@
                 <h1 class="title">
                     How I work: artist Jesper Ekeli
                 </h1>
-                <img src="landing.png" alt="Jesper Ekeli">
-
+                <figure>
+                    <img src="artist.jpg" alt="Jesper Ekeli">
+                    <figcaption>Photography: Sander Heieren</figcaption>
+                </figure>
+                <section class="about" id="about">
+                    <article>
+                        <p class="center">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quisquam odit ratione molestiae? Dolores exercitationem suscipit saepe laborum non cupiditate, expedita, itaque velit mollitia ad eum ipsam alias error asperiores!
+                            Odit maiores nulla a natus fuga corrupti saepe autem eveniet harum hic cumque voluptatum vel et reprehenderit necessitatibus dolorum deleniti, nemo iure, qui quam expedita! Eum perferendis alias rerum animi.
+                        </p>
+                    </article>
+                </section>
+                <section class="work" id="work">
+                    <!-- <h3>My Work</h3> -->
+                    <article class="carousel">
+                        <div class="image-container" id="imgs">
+                          <img
+                            src="art/pic1.jpg"
+                            alt="first-image" />
+                          <img
+                          src="art/pic2.jpg"
+                            alt="second-image" />
+                          <img
+                          src="art/pic1.jpg"
+                            alt="third-image" />
+                          <img
+                          src="art/pic2.jpg"
+                            alt="fourth-image" />
+                          <img
+                          src="art/pic1.jpg"
+                            alt="fourth-image" />
+                        </div>
+                        <div class="buttons-container">
+                          <button id="left" class="btn">Prev</button>
+                          <button id="right" class="btn">Next</button>
+                        </div>
+                    </article>
+                </section>
             </main>
             <footer id="footer" class="footer-wrapper">
-                Footer
+                <div class="contact">
+
+                    <p class="copy">
+                        &copy; 2021 by Studio Ekeli
+                    </p>
+
+                </div>
+              <div class="social-media">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+                <a target="_blank" href="https://www.instagram.com/studioekeli/">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+
+              </div>
             </footer>
         </div>
         <script src="script.js"></script>
