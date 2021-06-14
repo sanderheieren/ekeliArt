@@ -1,42 +1,47 @@
-const imgs = document.getElementById('imgs')
-const leftBtn = document.getElementById('left')
-const rightBtn = document.getElementById('right')
 
-const img = document.querySelectorAll('#imgs img')
 
-let idx = 0
 
-let interval = setInterval(run, 3000);
+// IMAGE CAROUSEEL
 
-function run() {
-  idx++;
-  changeImage()
-}
+// const imgs = document.getElementById('imgs')
+// const leftBtn = document.getElementById('left')
+// const rightBtn = document.getElementById('right')
 
-function changeImage() {
-  if(idx > img.length - 1) {
-    idx = 0;
-  } else if (idx < 0) {
-    idx = img.length - 1
-  }
+// const img = document.querySelectorAll('#imgs img')
 
-  imgs.style.transform = `translateX(${-250 * idx}px)`
-}
+// let idx = 0
 
-function resetInterval() {
-  clearInterval(interval)
-  interval = setInterval(run,3000)
-}
+// let interval = setInterval(run, 3000);
 
-rightBtn.addEventListener('click', () => {
-  idx++
-  changeImage();
-  resetInterval()
-})
+// function run() {
+//   idx++;
+//   changeImage()
+// }
 
-leftBtn.addEventListener('click', () => {
-  idx--
-  changeImage();
-  resetInterval()
-})
+// function changeImage() {
+//   if(idx > img.length - 1) {
+//     idx = 0;
+//   } else if (idx < 0) {
+//     idx = img.length - 1
+//   }
+
+//   imgs.style.transform = `translateX(${-250 * idx}px)`
+// }
+
+// function resetInterval() {
+//   clearInterval(interval)
+//   interval = setInterval(run,3000)
+// }
+
+// rightBtn.addEventListener('click', () => {
+//   idx++
+//   changeImage();
+//   resetInterval()
+// })
+
+// leftBtn.addEventListener('click', () => {
+//   idx--
+//   changeImage();
+//   resetInterval()
+// })
 
