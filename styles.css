@@ -52,7 +52,7 @@ body {
   .header-wrapper {
       display: flex;
       position: fixed;
-      /* background-color: gray; */
+      background-color: gray;
       top: 0;
       left: 0;
       right: 0;
