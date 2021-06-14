@@ -27,6 +27,14 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
+// NAV BAR
+const open = document.getElementById('open');
+const close= document.getElementById('close');
+const navWrapper = document.querySelector('.nav-wrapper');
+
+open.addEventListener('click', () => navWrapper.classList.add('show-nav'));
+close.addEventListener('click', () => navWrapper.classList.remove('show-nav'));
+
 // IMAGE CAROUSEEL
 
 // const imgs = document.getElementById('imgs')

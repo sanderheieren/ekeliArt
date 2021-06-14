@@ -119,6 +119,12 @@ body {
     margin-bottom: 20px;
     min-width: 350px;
   }
+
+.main-wrapper.contact {
+    margin: 0 auto;
+    color: black;
+    height: 300px;
+}
   
 .main-wrapper .title {
     font-weight: lighter;
