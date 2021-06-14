@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact | Studio Ekeli</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="styles/stylesContact.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/stylesContact.css">
 
     <script src="https://use.fontawesome.com/34a62d56ed.js"></script>
 </head>
@@ -22,27 +22,28 @@
                 <div class="nav-wrapper">
                     <ul>
                         <li>
-                            <a href="index.html">Home</a>
+                            <a href="../index.html">Home</a>
                         </li>
                         <li>
-                            <a href="index.html#about">About</a>
+                            <a href="../index.html#about">About</a>
                         </li>
                         <li>
-                            <a href="pages/work.html">Work</a>
+                            <a href="work.html">Work</a>
                         </li>
                         <li>
-                            <a href="pages/contact.html">Contact</a>
+                            <a href="contact.html">Contact</a>
                         </li>
                     </ul>
                 </div>
             </header>
             <main id="main" class="main-wrapper contact">
-                <h1>Contact</h1>
+                <h1 style="margin-bottom: 20px;">Contact</h1>
                 <form netlify action="https://formsubmit.co/sanheieren@gmail.com" method="POST">
                     <input type="hidden" name="_captcha" value="false">
-                    <input type="email" name="email" placeholder="Email Address" required>
-                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/thankyou.html">
-                    <input type="text" name="name" placeholder="Your Message" required>
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/pages/thankyou.html">
+                    <input type="text" name="name" placeholder="Name *" required>
+                    <input type="email" name="email" placeholder="E-mail *" required>
+                    <textarea placeholder="Message" name="message" id="" cols="10" rows="10"></textarea>
                     <button type="submit">Send</button>
                </form>
             </main>

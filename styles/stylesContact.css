@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+.main-wrapper.contact {
+    margin-top: 0px;
+}
+
+.main-wrapper.contact form {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    width: 80%;
+    margin-bottom: 20px;
+    font-family: 'EB Garamond', serif;
+    overflow: hidden;
+
+}
+
+.main-wrapper.contact form input, .main-wrapper.contact form button, .main-wrapper.contact form textarea {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.main-wrapper.contact form input::placeholder, .main-wrapper.contact form textarea::placeholder {
+    color: gray;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+.main-wrapper.contact form input[type="textarea"] {
+    height: 100px;
+}
+
+textarea {
+    resize: none;
+}
